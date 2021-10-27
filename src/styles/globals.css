@@ -1,0 +1,38 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+h3 {
+  @apply text-lg text-gray-800 mb-0 leading-tight;
+}
+
+.container {
+  @apply relative overflow-hidden mx-auto;
+  width: 16rem;
+  height: 8rem;
+}
+
+.gauge {
+  @apply relative border border-blue-200 rounded-full;
+  width: 16rem;
+  height: 16rem;
+  border-width: 30px;
+}
+
+.gauge::before {
+  @apply absolute border border-brand rounded-full z-10;
+  content: "";
+  width: 16rem;
+  height: 16rem;
+  border-width: 30px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  left: -30px;
+  top: -30px;
+  transform: rotate(167deg);
+}
