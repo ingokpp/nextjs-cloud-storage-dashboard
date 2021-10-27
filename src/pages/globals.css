@@ -1,7 +1,6 @@
 /* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 h2 {
   @apply text-lg font-semibold text-gray-800;
@@ -36,3 +35,13 @@ h3 {
   top: -30px;
   transform: rotate(167deg);
 }
+
+.tableHeader {
+  @apply px-6 bg-gray-200 text-gray-500 align-middle border border-solid border-gray-300 py-2 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left select-none;
+}
+
+.tableDataCell {
+  @apply border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap py-3 text-blueGray-600;
+}
+
+@tailwind utilities;
