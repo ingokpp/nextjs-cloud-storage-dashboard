@@ -29,11 +29,11 @@ const PINNED_FOLDERS = [
 
 const PinnedFolders = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 mt-7">
+    <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-4 mt-7">
       {PINNED_FOLDERS.map((folder, index) => (
         <div
           key={index}
-          className="flex items-center p-4 border rounded-lg space-x-2"
+          className="flex items-center p-4 border rounded-lg space-x-2 mt-5 md:mt-0"
         >
           <FolderIcon className="w-12 h-12 text-brand" />
           <div className="leading-tight">

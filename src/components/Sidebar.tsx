@@ -5,6 +5,7 @@ import {
   PhotographIcon,
   VideoCameraIcon,
 } from "@heroicons/react/solid";
+import AdvertisementCard from "./AdvertisementCard";
 import GaugeChart from "./GaugeChart";
 import SidebarItem from "./SidebarItem";
 
@@ -38,7 +39,7 @@ const SIDEBAR_DATA = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-96 min-h-screen pt-16 px-6">
+    <aside className="md:w-96 min-h-screen pt-16 px-6 mb-5 md:mb-0">
       <h2>Storage usage</h2>
       <GaugeChart />
       <ul className="mt-7">
@@ -51,18 +52,7 @@ const Sidebar = () => {
           />
         ))}
       </ul>
-      <div className="space-y-3 mt-7 bg-blue-900 rounded-lg p-4">
-        <span className="block text-xs text-gray-400">
-          Be quick and upgrade
-        </span>
-        <h3 className="text-white">
-          Get enough storage space for
-          <br /> all your data before it runs out.
-        </h3>
-        <button className="rounded-lg px-2 py-1.5 text-white bg-brand text-sm">
-          Upgrade now
-        </button>
-      </div>
+      <AdvertisementCard />
     </aside>
   );
 };
